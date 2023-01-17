@@ -1,0 +1,1226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #2A412A;
+    font-family: Roboto, Arial, Hervetica;
+}
+
+nav{
+    background: rgba(181, 174, 114, 0.8);
+    z-index: 5;
+    position: fixed;
+    border-bottom: 1px solid #21382E;
+    transition: top 0.5s ease-out 0.2s;
+}
+.logo{
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #21382E;
+}
+.skroty ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "o k g b";
+    grid-gap: 20px;
+}
+.skroty ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #21382E;
+    font-weight: 500;
+}
+.skroty ul li{
+    text-align: center;
+    padding: 10px 0;
+}
+.skroty ul li:nth-child(1){
+    grid-area: o;
+}
+.skroty ul li:nth-child(2){
+    grid-area: k;
+}
+.skroty ul li:nth-child(3){
+    grid-area: g;
+}
+.skroty ul li:nth-child(4){
+    grid-area: b;
+}
+
+.baner{
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.baner img{
+    position: relative;
+    top: 0px;
+    height: 100vh;
+}
+.baner .tresc{
+    position: absolute;
+}
+.baner .tresc h3{
+    color: #A0B572;
+    -webkit-text-stroke: 3px rgba(33, 56, 46, 0.34);
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+}
+
+#oferta{
+    display: grid;
+}
+#oferta > .tytul{
+    grid-area: t;
+    width: 100%;
+}
+#oferta > .tytul h3{
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    color: #A0B572;
+    text-align: center;
+    margin: 0;
+}
+#oferta > .tytul hr{
+    position: relative;
+    top: 10px;
+}
+#oferta article:nth-child(2){
+    grid-area: a;
+}
+#oferta article:nth-child(3){
+    grid-area: b;
+}
+#oferta article:nth-child(4){
+    grid-area: s;
+}
+#oferta article:nth-child(5){
+    grid-area: o;
+}
+#oferta article{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+#oferta article .ikona .kolo{
+    margin: 0 auto;
+    background: #3C6266;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
+#oferta article .ikona .kolo svg, #oferta article .ikona .kolo img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#oferta article .tytul{
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    color: #A0B572;
+}
+#oferta article .tresc{
+    text-align: center;
+    font-weight: 400;
+    color: #CFEB94;
+}
+.moro svg{
+    width: 100%;
+}
+.moro{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+}
+#powody{
+    display: grid;
+    justify-items: center;
+}
+#powody > .tytul{
+    grid-area: t;
+}
+#powody > .tytul h3{
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    color: #A0B572;
+    text-align: center;
+    margin: 0;
+}
+#powody > .tytul hr{
+    position: relative;
+    margin: 0;
+}
+#powody > .opis{
+    text-align: center;
+    grid-area: o;
+    font-weight: 500;
+    color: #21382E;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+}
+#powody article{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+#powody article:nth-child(4){
+    grid-area: d;
+}
+#powody article:nth-child(5){
+    grid-area: z;
+}
+#powody article:nth-child(6){
+    grid-area: b;
+}
+#powody article .ikona .kolo{
+    margin: 0 auto;
+    background: #3C6266;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.34);
+}
+#powody article .ikona .kolo img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+#powody article .tytul{
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    color: #A0B572;
+}
+#powody article .tresc{
+    text-align: center;
+    font-weight: 400;
+    color: #CFEB94;
+}
+
+#galeria{
+    display: grid;
+}
+#kontakt form{
+    display: grid;
+}
+#kontakt form > .tytul{
+    grid-area: t;
+}
+#kontakt form > .tytul h3{
+    font-family: Roboto Condensed;
+    font-weight: bold;
+    color: #21382E;
+    text-align: center;
+    margin: 0;
+}
+#kontakt form > .tytul hr{
+    margin: 0 auto;
+}
+#kontakt form label input, #kontakt form label select, #kontakt form label textarea{
+    background-color: #d2d2d2;
+    width: 100%;
+}
+#kontakt form label select{
+    appearance: none;
+}
+#kontakt form > label div{
+    color: #21382E;
+}
+#kontakt form > label:nth-child(2){
+    grid-area: i;
+}
+#kontakt form > label:nth-child(3){
+    grid-area: e;
+}
+#kontakt form > label:nth-child(4){
+    grid-area: n;
+}
+#kontakt form > label:nth-child(5){
+    grid-area: z;
+    position: relative;
+}
+#kontakt form > label:nth-child(6){
+    grid-area: u;
+    position: relative;
+}
+#kontakt form > label:nth-child(5)::after, 
+#kontakt form > label:nth-child(6)::after{
+    content: '<>';
+    transform: rotate(90deg);
+    padding: 0 0 5px 0;
+    position: absolute;
+}
+#kontakt form > label:nth-child(7){
+    grid-area: o;
+}
+#kontakt form > label:nth-child(8){
+    grid-area: r;
+    display: flex;
+    flex-direction: column;
+}
+#kontakt form button{
+    background-color: #059e66;
+    border: 3.5px solid #7E7E7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#kontakt form > label label{
+    color: #21382E;
+    line-height: 85px;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+#kontakt form label input[type="checkbox"]{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}#kontakt form label input[type="checkbox"] ~ span{
+    background-color: #d2d2d2;
+    border: 3.5px solid #7E7E7E;
+    border-radius: 12px;
+    padding: initial;
+    position: relative;
+    margin-right: 15px;
+    transition: background 0.3s ease-in 0s;
+}
+#kontakt form label label input[type="checkbox"] ~ span:hover{
+    background-color: #E0E0E0;
+}
+#kontakt form label input[type="checkbox"] ~ span:after {
+    content: "";
+    display: none;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 11px 11px 0;
+    transform: rotate(45deg);
+    position: relative;
+}
+#kontakt form label input[type="checkbox"]:checked ~ span{
+    background-color: #208CE6 !important;
+    transition: background 0s ease-in 0s !important;
+}
+#kontakt form label input[type="checkbox"]:checked ~ span::after{
+    display: block;
+}
+
+footer{
+    background-color: #3C6266;
+    text-shadow: 0px 4px 4px rgba(150, 150, 150, 0.07);
+    color: #B5AE72;
+    font-weight: 500;
+    text-align: center;
+    display: grid;
+}
+footer .button{
+    width: 100%;
+    background-color: #1d3128;
+    grid-area: b;
+    text-align: center;
+}
+footer .button a{
+    color: #B5AE72;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer .dane{
+    grid-area: d;
+}
+footer .tytul{
+    grid-area: t;
+}
+.zdjecie{
+    grid-area: i;
+}
+.zdjecie img{
+    width: 100%;
+}
+.zdjecie div{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 3vh;
+    background-color: black;
+}
+
+@media (max-width: 1657px) {
+    #powody .opis{
+        width: 80% !important;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1770px) {
+    #kontakt button > div > img{
+        display: none;
+    }
+    #kontakt button > div{
+        width: auto !important;
+    }
+    .zdjecie div{
+        height: 1vh !important;
+    }
+}
+@media (min-width: 1970px) {
+    #kontakt button > div > img{
+        display: none;
+    }
+    #kontakt button > div{
+        width: auto !important;
+    }
+}
+@media (min-width: 1000px) {
+    body{
+        letter-spacing: -0.25px;
+    }
+    
+    nav{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        font-size: 36px;
+        line-height: 64px;
+    }
+    .logo .gwiazda svg{
+        width: 42px;
+        height: 42px;
+        top: 5px;
+        position: relative;
+    }
+    .skroty ul li a{
+        font-size: 24px;
+    }
+    .skroty ul li:hover a{
+        text-decoration: underline;
+    }
+    
+    .baner{
+        margin-bottom: 150px;
+    }
+    .baner img{
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    .baner .tresc{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 200px;
+        top: 25vh;
+        right: 0;
+        width: 100%;
+    }
+    .baner .tresc h3{
+        font-size: 83px;
+        line-height: 100px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    .baner .tresc .button{
+        display: none;
+    }
+    
+    #oferta{
+        grid-template-rows: 0.17fr repeat(2, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        ". t t t t t t t t t t ."
+        "a a a a b b b b s s s s"
+        "o o o o p p p p w w w w";
+        grid-column-gap: 55px;
+        grid-row-gap: 60px;
+        padding: 0 200px;
+        margin-bottom: 150px;
+    }
+    #oferta > .tytul h3{
+        font-size: 60px;
+        line-height: 37px;
+        color: #A0B572;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        -webkit-text-stroke: 1px rgba(33, 56, 46, 0.7);
+    }
+    #oferta > .tytul hr{
+        border: 1px solid #000000;
+        width: 70%;
+    }
+    #oferta article:nth-child(6){
+        grid-area: p;
+    }
+    #oferta article:nth-child(7){
+        grid-area: w;
+    }
+    #oferta article{
+        gap: 22px;
+        width: 80%;
+    }
+    #oferta article .ikona .kolo{
+        width: 105px;
+        height: 105px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    #oferta article:nth-child(2) .ikona .kolo svg{
+        width: 80px;
+        height: 80px;
+    }
+    #oferta article:nth-child(3) .ikona .kolo img{
+        width: 65px;
+        height: 68px;
+    }
+    #oferta article:nth-child(4) .ikona .kolo img{
+        width: 73px;
+        height: 70px;
+    }
+    #oferta article:nth-child(5) .ikona .kolo img{
+        width: 72px;
+        height: 72px;
+    }
+    #oferta article:nth-child(6) .ikona .kolo img{
+        width: 60px;
+        height: 70px;
+    }
+    #oferta article:nth-child(7) .ikona .kolo img{
+        width: 80px;
+        height: 73px;
+    }
+    #oferta article .tytul{
+        font-size: 36px;
+        line-height: 37px;
+    }
+    #oferta article .tresc{
+        font-size: 18px;
+        line-height: 37px;
+    }
+    
+    .moro{
+        padding: 0 200px;
+        width: calc(100% - 400px);
+    }
+    .moro svg:nth-child(1){
+        display: none;
+    }
+    .moro svg:nth-child(2){
+        height: 55vh;
+    }
+    #powody{
+        grid-template-rows: 70px 0.34fr 70px repeat(2, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        ". . . . . . . . . . . ."
+        ". . t t t t t t t t . ."
+        ". o o o o o o o o o o ."
+        ". . . . . . . . . . . ."
+        "d d d d z z z z b b b b";
+        grid-column-gap: 55px;
+        padding: 0 200px;
+        margin-bottom: 150px;
+    }
+    #powody > .tytul h3{
+        font-size: 60px;
+        line-height: 37px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        -webkit-text-stroke: 1px rgba(33, 56, 46, 0.7);
+    }
+    #powody > .tytul hr{
+        border: 1px solid #000000;
+        top: 25px;
+    }
+    #powody > .opis{
+        width: 65%;
+        font-size: 32px;
+        line-height: 65px;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    }
+    #powody article{
+        gap: 22px;
+    }
+    #powody article .ikona .kolo{
+        width: 105px;
+        height: 105px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    #powody article:nth-child(4) .ikona .kolo img{
+        width: 70px;
+        height: 70px;
+    }
+    #powody article:nth-child(5) .ikona .kolo img{
+        width: 65px;
+        height: 68px;
+    }
+    #powody article:nth-child(6) .ikona .kolo img{
+        width: 73px;
+        height: 78px;
+    }
+    #powody article .tytul{
+        font-size: 36px;
+        line-height: 37px;
+    }
+    #powody article .tresc{
+        font-size: 18px;
+        line-height: 37px;
+    }
+    
+    #galeria{
+        grid-template-rows: repeat(4, 400px);
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        "p p p p p p p p p s s s"
+        "h h h h h h h h h s s s"
+        "c c c c c c c c c c c c"
+        "c c c c c c c c c c c c";
+        grid-gap: 30px;
+        padding: 0 200px;
+        width: calc(100% - 400px);
+        margin-bottom: 150px;
+    }
+    #galeria div.img.i1{
+        grid-area: p;
+    }
+    #galeria div.img.i1 img{
+        object-position: top;
+    }
+    #galeria div.img.i2{
+        grid-area: s;
+    }
+    #galeria div.img.i3{
+        grid-area: h;
+    }
+    #galeria div.img.i4{
+        grid-area: c;
+    }
+    #galeria div.img{
+        position: relative;
+        overflow: hidden;
+        border: 4px solid #3C6266;
+        box-sizing: border-box;
+    }
+    #galeria div.img div.text{
+        position: absolute;
+        top: 0;
+        padding: 1em;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        font-size: 20px;
+        line-height: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(210, 210, 210, 0.6);
+        opacity: 0;
+    }
+    #galeria div.img:hover div.text{
+        opacity: 1;
+    }
+    #galeria div.img img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    #galeria div.img:hover img{
+        filter: blur(3px);
+        transform: scale(1.15);
+    }
+    #galeria div.img img, #galeria div.img div.text{
+        transition: all 0.2s ease-out 0s;
+    }
+    
+    #kontakt{
+        padding: 0 200px;
+        margin-bottom: 150px;
+    }
+    #kontakt form{
+        border-radius: 5px;
+        background-color: #B5AE72;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        "t t t . . . . . . . . ."
+        ". i i i i i i i i i i ."
+        ". e e e e e e e e e e ."
+        ". n n n n n n n n n n ."
+        ". z z z z z z z z z z ."
+        ". u u u u u u u u u u ."
+        ". o o o o o o o o o o ."
+        ". r r r r r r r r . . ."
+        ". r r r r r r r r s s .";
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        padding: 20px 0;
+    }
+    #kontakt form > .tytul h3{
+        font-size: 32px;
+        line-height: 37px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+    #kontakt form > .tytul hr{
+        border: 1px solid #000000;
+        width: 66%;
+        position: relative;
+        bottom: -10px;
+    }
+    #kontakt form label input, #kontakt form label select, #kontakt form label textarea{
+        border: 1.5px solid #7E7E7E;
+        border-radius: 5px;
+        box-sizing: border-box;
+        height: 50px;
+        font-size: 28px;
+        line-height: 37px;
+        padding: 0 0 0 9px;
+    }
+    #kontakt form label textarea{
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 300px;
+        max-height: 300px;
+        min-height: 300px;
+        padding: 9px 0 0 9px;
+    }
+    #kontakt form > label div{
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0 0 9px 5px;
+    }
+    #kontakt form label hr{
+        display: none;
+    }
+    #kontakt form > label:nth-child(5){
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas:
+        "t t t t . . . . . ."
+        "p p p p p p k k k k";
+        grid-column-gap: 20px;
+    }
+    #kontakt form > label:nth-child(5) div{
+        grid-area: t;
+    }
+    #kontakt form > label:nth-child(5) input{
+        grid-area: p;
+    }
+    #kontakt form > label:nth-child(5) select{
+        grid-area: k;
+    }
+    #kontakt form > label:nth-child(6){
+        grid-area: u;
+    }
+    #kontakt form > label:nth-child(5)::after, 
+    #kontakt form > label:nth-child(6)::after{
+        font-size: 25px;
+        border-bottom: 1px solid #999;
+        right: 5px;
+        top: 53px;
+    }
+    #kontakt form > label:nth-child(8){
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    #kontakt form button{
+        border-radius: 15px;
+        width: 100%;
+        height: 90px;
+        grid-area: s;
+        padding: 0 9px;
+        transition: background 0.3s ease-in 0s;
+    }
+    #kontakt form button:hover{
+        background-color: #04AA6D;
+    }
+    #kontakt form button > div{
+        text-align: right;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        color: #E0E0E0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    #kontakt form button > div img{
+        height: 100%;
+        position: relative;
+        top: 15px;
+    }
+    #kontakt form button > img{
+        display: none;
+    }
+
+    #kontakt form > label label{  
+        font-size: 30px;
+    }
+    #kontakt form label input[type="checkbox"] ~ span{
+        width: 50px;
+        height: 50px;
+        top: 12px;
+    }
+    #kontakt form label input[type="checkbox"] ~ span:after {
+        width: 15px;
+        height: 30px;
+        left: 13px;
+    }
+
+    footer{
+        grid-template-columns: 200px repeat(12, 1fr) 200px;
+        grid-template-areas: 
+        ". . . . t t t t t t . . . ."
+        ". b b b . . . . . d d d d ."
+        "i i i i i i i i i d d d d .";
+        padding: 30px 0 0;
+    }
+    footer .button{
+        height: 60px;
+        border: 2px solid #7E7E7E;
+        border-radius: 32px;
+        transition: background 0.3s ease-in 0s;
+    }footer .button:hover{
+        background-color: #21382E;
+    }
+    footer .button a{
+        font-size: 30px;
+        line-height: 60px;
+        padding: 13.5px calc((100% - 201px) / 2);
+    }
+    footer .dane{
+        font-size: 30px;
+        line-height: 60px;
+    }
+    footer .tytul{
+        font-size: 36px;
+        line-height: 37px;
+    }
+    .zdjecie{
+        width: 100%;
+        position: relative;
+    }
+    .zdjecie img{
+        object-fit: cover;
+        object-position: left 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    body{
+        letter-spacing: -0.5px;
+    }
+    header{
+        margin-bottom: 350px;
+    }
+    main{
+        margin-bottom: 350px;
+    }
+    
+    nav{
+        width: calc(100vw - 76px);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        ". logo logo ."
+        "c c c c";
+        grid-gap: 47px;
+        padding: 40px 38px 0 38px;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .logo > div{
+        display: inline-block;
+    }
+    .logo .tekst{
+        font-size: 85px;
+        position: relative;
+        top: 7px;
+    }
+    .skroty{
+        grid-area: c;
+    }
+    .skroty ul{
+        width: 100%;
+        grid-auto-rows: 100px;
+        grid-gap: 47px;
+        padding: 38px 0 0;
+    }
+    .skroty ul li a{
+        font-size: 43px;
+    }
+    
+    .baner img{
+        right: 200px;
+    }
+    .baner .tresc{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "t t t t"
+        ". b b .";
+        grid-column-gap: 47px;
+        padding: 0 38px;
+        top: 440px;
+    }
+    .baner .tresc h3{
+        font-size: 114px;
+        line-height: 190px;
+        text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.5);
+        grid-area: t;
+    }
+    .baner .tresc .button{
+        width: 100%;
+        height: 100%;
+        background: #21382E;
+        border-radius: 76px;
+        grid-area: b;
+        text-align: center;
+    }
+    .baner .tresc .button a{
+        color: #A0B572;
+        font-family: Roboto Condensed;
+        
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 167px;
+        
+        text-decoration: none;
+        padding: 59px 34px;
+    }
+    
+    #oferta{
+        grid-template-rows: 0.65fr 0 repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "t t t t"
+        ". . . ."
+        "a a a a"
+        "b b b b"
+        "s s s s"
+        "o o o o";
+        grid-column-gap: 47px;
+        grid-row-gap: 60px;
+        padding: 0 38px;
+    }
+    #oferta > .tytul h3{
+        font-size: 114px;
+        line-height: 161px;
+        color: #A0B572;
+        text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.15);
+        -webkit-text-stroke: 2px rgba(33, 56, 46, 0.7);
+    }
+    #oferta > .tytul hr{
+        border: 4px solid #000000;
+    }
+    #oferta article:nth-child(6){
+        display: none;
+    }
+    #oferta article:nth-child(7){
+        display: none;
+    }
+    #oferta article{
+        gap: 60px;
+    }
+    #oferta article .ikona .kolo{
+        width: 333px;
+        height: 333px;
+        box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.5);
+    }
+    #oferta article:nth-child(2) .ikona .kolo svg{
+        width: 238px;
+        height: 240px;
+    }
+    #oferta article:nth-child(3) .ikona .kolo img{
+        width: 202px;
+        height: 202px;
+    }
+    #oferta article:nth-child(4) .ikona .kolo img{
+        width: 202px;
+        height: 195px;
+    }
+    #oferta article:nth-child(5) .ikona .kolo img{
+        width: 190px;
+        height: 218px;
+    }
+    #oferta article:nth-child(6) .ikona .kolo img{
+        width: 202px;
+        height: 202px;
+    }
+    #oferta article:nth-child(7) .ikona .kolo img{
+        width: 202px;
+        height: 202px;
+    }
+    #oferta article .tytul{
+        font-size: 85px;
+        line-height: 88px;
+        -webkit-text-stroke: 2px rgba(33, 56, 46, 0.7);
+    }
+    #oferta article .tresc{
+        font-size: 48px;
+        line-height: 88px;
+    }
+    
+    .moro{
+        width: 100%;
+    }
+    .moro svg:nth-child(2){
+        display: none;
+    }
+    #powody{
+        grid-template-rows: 200px 0.5fr 1.06fr 160px repeat(3, 1fr 60px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        ". . . ."
+        "t t t t"
+        "o o o o"
+        ". . . ."
+        "d d d d"
+        ". . . ."
+        "z z z z"
+        ". . . ."
+        "b b b b";
+        grid-column-gap: 47px;
+        padding: 0 38px;
+        position: relative;
+        margin-bottom: 250px;
+    }
+    #powody > .tytul h3{
+        font-size: 142px;
+        line-height: 161px;
+        text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.15);
+        -webkit-text-stroke: 2px rgba(33, 56, 46, 0.7);
+    }
+    #powody > .tytul hr{
+        border: 4px solid #000000;
+        top: 10px;
+        width: calc(100% - 76px);
+    }
+    #powody > .opis{
+        width: 90% !important;
+        position: absolute;
+        font-size: 57px;
+        line-height: 119px;
+        -webkit-text-stroke: 2px rgba(0, 0, 0, 0.1);
+    }
+    #powody article{
+        gap: 60px;
+    }
+    #powody article .ikona .kolo{
+        width: 333px;
+        height: 333px;
+        box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.5);
+    }
+    #powody article:nth-child(4) .ikona .kolo img{
+        width: 202px;
+        height: 202px;
+    }
+    #powody article:nth-child(5) .ikona .kolo img{
+        width: 155px;
+        height: 162px;
+    }
+    #powody article:nth-child(6) .ikona .kolo img{
+        width: 173px;
+        height: 185px;
+    }
+    #powody article .tytul{
+        font-size: 85px;
+        line-height: 88px;
+        -webkit-text-stroke: 2px rgba(33, 56, 46, 0.7);
+    }
+    #powody article .tresc{
+        font-size: 48px;
+        line-height: 88px;
+    }
+    
+    #galeria{
+        grid-template-rows: 0.9fr 0.5fr 0.9fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "p p p p"
+        "d d t t"
+        "c c c c";
+        grid-gap: 47px;
+        padding: 0 38px;
+        overflow: hidden;
+        width: calc(100% - 76px);
+        margin-bottom: 350px;
+    }
+    #galeria div.img{
+        position: relative;
+        overflow: hidden;
+        border: 9px solid #3C6266;
+        box-sizing: border-box;
+    }
+    #galeria div.img div.text{
+        display: none;
+    }
+    #galeria div.img img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    #galeria div.img.i1{
+        grid-area: p;
+    }
+    #galeria div.img.i2{
+        grid-area: d;
+    }
+    #galeria div.img.i3{
+        grid-area: t;
+    }
+    #galeria div.img.i4{
+        grid-area: c;
+    }
+
+    #kontakt{
+        background-color: #B5AE72;
+        border-radius: 12px;
+        margin: 0 38px;
+    }
+    #kontakt form{
+        position: relative;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "t t t t"
+        ". . . ."
+        "i i i i"
+        "e e e e"
+        "n n n n"
+        "z z z z"
+        "u u u u"
+        "o o o o"
+        "r r r r";
+        grid-gap: 23.5px;
+        padding: 33px;
+    }
+    #kontakt form > .tytul h3{
+        font-size: 76px;
+        line-height: 88px;
+        text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.1);
+    }
+    #kontakt form > .tytul hr{
+        border: 4px solid #000000;
+        position: relative;
+        top: 10px;
+        width: calc(60% - 76px);
+    }
+    #kontakt form label input, #kontakt form label select,#kontakt form label textarea{
+        background-color: #E0E0E0;
+        border: 3.5px solid #7E7E7E;
+        border-radius: 12px;
+        height: 85px;
+        font-size: 43px;
+        line-height: 88px;
+        padding: 0 17px;
+        margin-bottom: 23.5px;
+    }
+    #kontakt form label input{
+        width: calc(100% - 9px - 34px);
+        height: calc(85px - 9px - 48px);
+        padding: 24px 17px;
+    }
+    #kontakt form label textarea{
+        width: calc(100% - 48px + 7px);
+        min-width: calc(100% - 48px + 7px);
+        max-width: calc(100% - 48px + 7px);
+        height: 510px;
+        max-height: 510px;
+        min-height: 510px;
+        padding: 24px 17px;
+        margin-bottom: 30px;
+    }
+    #kontakt form > label div{
+        font-size: 43px;
+        line-height: 88px;
+    }
+    #kontakt form > label > hr{
+        border: 2px solid #3C6266;
+    }
+    #kontakt form > label:nth-child(5)::after, 
+    #kontakt form > label:nth-child(6)::after{
+        font-size: 44px;
+        border-bottom: 2px solid #999;
+        right: 5px;
+        top: 100px;
+    }
+    #kontakt form > label:nth-child(5)::after{
+        top: 206px;
+    }
+    #kontakt form > label:nth-child(8){
+        gap: 23px;
+    }
+    #kontakt form button{
+        border-radius: 100%;
+        width: 119px;
+        height: 119px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        z-index: 4;
+        transition: background 1s linear 0s;
+    }
+    #kontakt form button:active{
+        background-color: #04AA6D;
+        transition: background 0s linear 0s;
+    }
+    #kontakt form button:hover{
+        background-color: #059e66;
+    }
+    #kontakt form button > div{
+        display: none;
+    }
+    #kontakt form button img{
+        height: 105px;
+    }
+    
+    #kontakt form > label label{  
+        font-size: 33px;
+    }
+    #kontakt form label input[type="checkbox"] ~ span{
+        width: 85px;
+        height: 85px;
+    }
+    #kontakt form label input[type="checkbox"] ~ span:after {
+        width: 19px;
+        height: 38px;
+        top: 12px;
+        left: 28px;
+    }
+
+    footer{
+        line-height: 88px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "t t t t"
+        ". b b ."
+        "d d d d"
+        "i i i i";
+        grid-gap: 47px;
+        padding: 47px 0 0 0;
+    }
+    footer .button{
+        height: 167px;
+        border: 5px solid #7E7E7E;
+        border-radius: 76px;
+    }
+    footer .button a{
+        font-size: 48px;
+        line-height: 167px;
+        padding: 59px 34px;
+    }
+    footer .dane{
+        font-size: 66px;
+    }
+    footer .tytul{
+        font-size: 71px;
+    }
+    footer .zdjecie{
+        position: relative;
+    }
+}

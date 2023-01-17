@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name= "keywords" content= "prywatna armia, broń, wywiad wojskowy, ochrona, sprzęt wojskowy"/>
+    <meta name= "discription" content= "Chcesz zdobyć władzę, lecz brakuje Ci wojska? A może potrzebujesz dozbroić i doszkolić swoje siły? Wszystko to znajdziesz na naszej stronie - borsuk.pl."/>
+    <meta name= "author" content= "Jakub Irla"/>
+    <meta name= "robots" content= "noindex"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Borsuk.pl</title>
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="logo">
+            <div class="gwiazda">
+                <svg width="100" height="100" viewBox="0 0 39 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5903 1.64867L23.5121 13.9713L23.623 14.3197H23.9886H36.7083L26.409 21.9591L26.1221 22.1719L26.2304 22.5123L30.1589 34.856L19.8881 27.2377L19.5903 27.0168L19.2924 27.2377L9.02161 34.856L12.9501 22.5123L13.0585 22.1719L12.7716 21.9591L2.47219 14.3197H15.192H15.5576L15.6684 13.9713L19.5903 1.64867Z" fill="#3C6266" stroke="#21382E"/>
+                </svg>
+            </div>
+            <div class="tekst">borsuk.pl</div>
+        </div>
+        <div class="skroty">
+            <ul>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="baner">
+        <div class="baner">
+            <img src="img/banerTlo.jpg" alt="Maszerujący żołnierze">
+            <div class="tresc">
+                <h3>Pozwól nam walczyć za Ciebie</h3>
+                <div class="button"><a href="#powody">Dowiedz się więcej</a></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="oferta">
+            <div class="tytul">
+                <h3>Oto co możemy Ci zaoferować</h3>
+                <hr>
+            </div>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                        <svg viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Profesjonalizm</title>
+                        <rect y="0.0560303" width="100" height="100.295" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_74_32" transform="translate(-0.00147491) scale(0.00195889)"/>
+                        </pattern>
+                        <image id="image0_74_32" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAgAElEQVR4nO3de7BmVXmg8ec0NA3NpbkjoM1NacELAhHUaUVoBEQgXJOYiUzUKTOjjojjJDNVyZSTyVR0TCpiVWp0UqNlRzEhTogmYUDAuwEV5RLBgIA0IFeFpumGpuk+PX/sc7Q5nMt32Wu/e631/KremmRC72+ttb/zrvdbe6+9QZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZKkGk1EN0BS544HTgIOmvrf1wBfBa4Pa5EkSUpmJfADYOsccSPw+rDWSZKk1r0H2Mzck/90bJ76byVJUubOByZZePKfjsmpfyNJkjK1O/AIg0/+0/EosEdAeyV1ZFF0AyQl9XZgnxH+3d7AO1tuiyRJ6sj3Gf7X/3TcFNBeSZI0poMZ7tr/bLGi81ZL6oSXAKRync/4z/o4u42GSJKk7lzHeL/+twLf7bzVkiRpZAcy/vL/9JbAg5BUHC8BSGU6j3Ye9T0BnNPCcSRJUge+zvi//qfjmx23XZIkjWA/Bnvs76CxBTig0x5ISs5LAFJ5zgG2a/F4i3A3gCRJvXc17f36n45rO+2BJEkayl7As7RfAGxmtEcKS+opLwFIZTkL2D7BcbebOrakQlgASGU5L9NjS5KkEe0KPE37y//TsQlfESwVwxUAqRxnATsmPP5i4IyEx5fUIQsAqRxdLNF7GUCSpB5ZCqwn3fL/dDxNc6lBUuZcAZDK8BZg5w4+Z0fgzR18jqTELACkMnS5NO9lAEmSemAJ8ATpl/+nYwPNJQdJGXMFQMrfqcBuHX7eUuCUDj9PUgIWAFL+IpbkvQwgSVKgxcBjdLf8Px1rgR066J+kRFwBkPK2ipin8y2b+mxJmbIAkPIWuRTvZQBJkgJsBzxM98v/0/Ez0rx5UJIkzeMk4ib/6fAygJQpLwFI+erDEnwf2iBJUjUWAT8lfgXgIZpLEZIkqQMriZ/8p2Nl4r5KSsBLAFKe+rT03qe2SJJUrAngHuJ/+U/HfVNtkiRJCb2a+El/ZhyXtMeSWuclACk/fVxy72ObJEkqyu3E/+KfGXcn7bEkSZU7ivjJfq44KmG/JbXMSwBSXvq81N7ntkmSlLVbif+lP1fcmrDfkiRVawXxk/xCcUSy3ktqlZcApHxcEN2AAXgZQJKklt1I/C/8heLGZL2XJKlChxA/uQ8ahyUaA0kt8hKAlIcclv+nnRvdAEmSSvEd4n/ZDxrXJxoDSZKq8kJgkviJfdCYBJYnGQlJrfESgNR/55PX2/YmgHOiGyFpfhYAUv/luLUuxzZLktQb+wGbiV/WHza2APsnGA9JLclpWVGaz4uB3wFOpdkyt0tsc1SY9cBdwJXAJ4GfxDZHkrQI+ENgE/G/eo06YiPwB/gDSpLCLAI+T/yEYNQZn8EiQBnbLroB0hh+D3h/dCNUraOAdcB10Q2RRmH1qlztC9wD7BTdEFVtPXAw8PPohkjDchugcnUhTv6KtwvwtuhGSKOwAFCuVkU3QJpyYnQDpFFYAChXh0Q3QJpyUHQDpFFYAChXW6MbIEk5swBQru6JboA0xe+ismQBoFxdG90AacpXohsgjcJtgMrVvjSPY10a3RBV7UmabYCPRTdEGpYPAlKuNtC8JOdN0Q1R1X4P+Fp0IySpNhPAZ4l/JKxRZ3wKV1GVMVcAlLu/A7YHVmIyVjcmaV5A9QGaQkCSFOhE4H7ifxUaZcdDNK+cliT1yN7Al4ifJIwy44vAXkiSemkCeBfNTYLRE4ZRRjwNXISXmCQpCy8DbiF+8jDyjh8Br0KSlJWdgEuIn0SMPGM1sDOSpGydS/O+9ugJxcgj1gK/gSSpCMuBbxA/uRj9juuBQ5EkFWV74EM0TxCMnmiMfsVm4MPAYiRJxToBuI/4ScfoR9wLvAFJUhWWAX9F/ORjxMbluLdfkqp0IT4zoMaY3tsvSarYEcDNxE9KRjdxG/BKJEkCdsRnBtQQq4GlSJI0w9nAz4ifqIx2Yy3w60iSNI8XAV8nftIy2onrgEOQJGkAi2huEttE/ARmjBabaZ77sB2SJA3peOAu4iczY7hYA7x+lvMpSdLAlgGXEj+pGYPF3wJ7znomJUkawYXAeuInOGP2eAr39ksDm4huQKWOB04CDpr639cAX6V5EYn67aXA5/Ed8X1zG80b/P45uiFakPlPVVoJ/IC5f8HciNctczD9zIBJ4n/1Gu7tz4X5T9V6D4O9hW7z1H+r/jsFeIj4CbDWeBQ4c8GzpD4w/6la5zPcr8XJqX+j/tsPuJL4ybC2+Apw4ADnR/HMf6rW7sAjDJ/gHgX2CGivhjeBzwzoKp7Fvf05Mf+pahczerL7YEB7NbpXA3cSP0mWGmtoriMrH+Y/Ve37jP4HcFNAezWe3YDPEj9ZlhZfwF+EOTL/qVoHM/6d4is6b7XacCHwJPETZ+7h3v58mf96blF0Awp3PuM/a+HsNhqizq0GfoVma5NGcytwHM2WS+XH/KeqXcf4v4C+23mr1abFNDetbSH+13QuMUkz6S8ZYbzVH+Y/VetA2nlQzCS/fGKW8nU18RNrLnH1iGOs/jD/ZcBLAOmcRzuPWp4AzmnhOIqzC969PozX09xMqXyZ/zJgAZDOeT09lrp3Js3jgzWYJcDp0Y3QWMx/qtZ+DPbYy0FjC3BApz1Qm75A/LJ6bvE3I420+sD8lwlXANI4h3afVLYI74bN1VLgtOhGZOh0YOfoRmgk5r9MWACkkWLJymWwPJ2GE9kolgKnRjdCIzH/qVp70TyvvO0l0c3APh32Q+34HPHL6bnG50YYb8Uy/2XEFYD2nQVsn+C4200dW/lYArwluhEZ8+bJ/Jj/MmIB0L6US1Uug+XlZGBZdCMytiuwKroRGor5T9XaFXiadEuim/CFKDn5FPHL6LnHp4YedUUx/2XGFYB2nUXaJcvFwBkJj6/2bE+zhK3xnA3sEN0IDcT8lxkLgHZ1sUTlMlgeTgT2jm5EAfYATohuhAZi/lO1lgLrSb8k+jTNUpv67RPEL5+XEp8YcuzVPfNfhlwBaM9b6Ga/947Amzv4HI1uEd6x3KazaffBMmqf+S9DFgDt6XJpymWwflsJ7B/diILshy9T6jvzn6q1BHiC7pZEN9AsuamfLiF+2by0+PhQZ0BdMv9lyhWAdpxKt68vXQqc0uHnaXAT+NzyFM6lndfLqn3mv0xZALQjYknKZbB+Oh5YHt2IAh1IM7bqH/OfqrUYeIzul0TX4v7oPvoo8cvlpcZHhzgP6ob5L2OuAIxvFTFPp1qGj0nto3OiG1Cw8/EyQN+Y/zJmATC+yKUol8H65WjgsOhGFOxgmjFWf5j/VK3tgIeJWxL9GWnevKXR/BHxy+Slx/8Y+GwoNfOfqnYS8QnRZbD+uI3470PpcfvAZ0Opmf8y5yWA8fRhCaoPbRAcCRwR3YgKHA68PLoRAvqRe/rQhmxZAIxuEf3Y730uPia1D0xE3XGs45n/VLWVxC9/TYePSY13E/Hfg1rilgHPidIx/xXAFYDR9elXSJ/aUqNDgaOiG1GRVwArohtRuT7lnD61JSsWAKOZoF/7vd0fHev86AaM6K6pyNG50Q2omPlPVXs18cteM+O4pD3WfL5L/PkfNi4Ddqd5t/rqHrRn2LhhoDOjFMx/qtqHif/Cz4yPJO2x5vJCYJL48z9orAPeNUs/LgAe70H7holD5zgnSsv8p6rdTvwXfmbcnbTHmsv7iT/3g8YNwEvm6cvBwD/1oJ2Dxgfm6YvSMf+pWkcR/2WfK7wRrXvfJP68LxSTwCUM9vKU7YEPAVt60O6F4tsD9EftMv+pan9I/Bd9rvjDhP3W8+0HbCb+vM8XjwCnj9C3VcADPWj/fDEJvGiEvml05j9V7Vbiv+hzxa0J+63nezfx53y+uAY4YIz+7QP8Yw/6MV+8d4z+aXjmP1VrBfFf8oXCx9F251riz/ds8SzNMn4b23wngIuAZ3rQr9niqy30UYMx/6lqv0/8F3yh+P1kvde29qKZaKPP98z4CfDaBP09FrijB/2bGVuAFyTor57P/Keq3Uj8F3yhuDFZ77WtdxJ/rmfG9N7+VHYFPtmDfs6M2bY1qn3mP1XrEOK/3IPGYYnGQL90BfHneTrWAW9L293n6NszA65K211h/lPlfpf4L/ag8Z8SjYEay+jPNfGF9vancjDNNrzo/m8FNgF7pu1u9cx/qtp3iP9iDxrXJxoDNX6L+HM8zN7+VPr0zIDfTtzX2pn/VK3cHvc6CSxPMhICuJzY8zvq3v5UTgJ+SuyY/H3yXtbL/Keq5fS41+m4KMlIaCmwgbjzeg2wf/JeDm8f4B+IG5eNwG7Je1kn85+qlsPjXmfGN5KMhH6NmPPZ5t7+VKafGbCRmDF6a/ouVsn8p2rl8LjX2WIL/fylmLu/pvtzmWpvfyrHEPPCmC900bnKmP80kBcDHwVuAZ4k/gtglBVPAjfRvIr0EGLsSLPlrst+p97bn8pONDcpdjlWG4Cdu+jcLMx/Rsp4EriZ5rXHvXoN9iKalzBsIn6QjDpiI/AHNEvOXfrVFto+aHS9tz+V8+n2mQHnddOtXzD/GV3HM8B/pQeXAxcBnyd+QIw64zN0WwSsTtSPmfE9Yvb2p3IQ8C26GbtLO+oTmP+M2PhLuv8R9Bz/eZZGGUaX8QG6sRh4LHFf+rC3P5WunhmwjuZSTRfMf0Z0fJAg+wJPDdBAw0gZT9K8mCe1kxP340HglA76Ee1k4AHSjuVpHfTD/Gf0IdYDezOica4hXEhzo48UaRe6uVa+MuGxrwReBXw54Wf0xTU0fb0i4We8LuGxp5n/1Ac703wXRzJOAbBqjH8rtenEDj7jgATH3ESzhHc68HCC4/fVI8AZwMU0NzS1LcW5msn8p744adR/OE4BELUVS5rpoA4+Y1PLx7sHOAH4U5qlvNpsBT4GHAv8sOVjb2z5eLMx/6kvRs5/4xQANSYt1euOFo+1GngFvrQE4Faahxx9usVj3tnisaS+G3kuHqcAuGeMfyu1qYvv4lWMX/Suo3mT4L+huXlHjfXAO4DfBJ5o4XhXtXCMhfykg8+QBrFm1H84TgFw7Rj/VmrTVzr4jNsZb2L5Hs0jcj/XTnOK9HngaJpXz47qKuBH7TRnXuY/9UXId3FfYt+KZhhbaX5V70k3Dmf4RwFvoXl85+KO2liCxcAfM/wzA9YBKzpqo/nP6EN0tQ16Vr87QAMNI2V0/drPU2iWrAdp24PAmzpuX0lWMfgzAzYAp3bcPvOfER0XE2gC+OwsjTKMLuJTxDwK8yjghnnaNUmz1L9vQNtKsw9Njplk7vG+gebSQdfMf0ZkfJox818byXP6ZRj/hR68nEBVmAT+O/DfaP4QIkzQPNXuLOCVNA/k+BnNtf5L6eY6dE2OAN4KHEfz5LMNNG/e+xLNw4WivgfmP3VtEvgjmkdrR33vn+dE4H7iqyKj7HiI7pd6pYWY/4wuotf5b2+aijx6kIwy44sE3vAiLcD8Z6SMLPLfBPAuvEPWaC+eprnZL/TVl9IAzH9G25Fl/nsZzTW66MEz8o4f0bw8RsqJ+c9oI7LOfzvRvN88ehCNPGM1zc11Uo7Mf8Y4UUz+Oxf4OfEDauQRa4HfQCqD+c8YJorMf8uBbxA/uEa/43rgUKSymP+MQaLo/Lc9zd7FzcQPtNGv2Ax8GB+Zq3KZ/4y5oqr8dwJwH/GDbvQj7gXegFQH85+xbVSZ/5YBf0X84BuxcTkZ7G2VWmb+M8x/wIW4Z7bGmN7bKtXM/FdnmP+2cQRwM/EnxegmbqN5fr4k819tYf6bxY64Z7aGWA0sRdK2zH91hPlvAWfTvFUt+kQZ7cZa4NeRNB/zX5lh/hvCi4CvE3/SjHbiOuAQJA3C/FdWmP9GsIjmJolNxJ9AY7TYTLPveTskDcP8l3+Y/1pwPHAX8SfTGC7WAK+f5XxKGpz5L88w/7VoGXAp8SfVGCz+Fthz1jMpaVjmv7zC/JfIhcB64k+wMXs8hXtbpVTMf/0O818HXgrcSPzJNp4btwKvmOe8SRqf+a+fYf7r0PSe2UniT7zh3lapS+a/foX5L8gpwEPEfwFqjUeBMxc8S5JSMP+Z/6q3H3Al8V+G2uIrwIEDnB9J6Zj/zH/Vm8A9s13Fs7i3VeoT85/5T8CrgTuJ/5KUGmuAlQOfDUldMv+Z/6q3G/BZ4r8spcUXgD2GOA+Sumf+M/+JZs/sk8R/cXIP97ZK+TH/mf+qtwL4AfFfolzjh8DLhx51SX1g/jP/VW8xzU0bW4j/QuUSkzT7jJeMMN6S+sP8Z/4TcDXxX6xc4uoRx1hSP5n/zH/PMxHdgI7sCjxC8wQtLewZYF9gXXRDJI1tF5qH1pj/BlNN/lsU3YCOnIFf/mEsAU6PboSkVpyJ+W8Y1eS/WgqA86IbkCHHTCqDf8vDq2LMargEsJRm+X/n6IZk5imaZbAN0Q2RNDLz32iqyH81rAC8Gb/8o1gKnBrdCEljOQ3z3yiqyH81FABVLOUk4thJefNveHTFj13plwCW0Cx/7RbdkEw9SbMMtjG6IZKGtgR4GFgW3ZBMFZ//Sl8BeBNO/uPYFVgV3QhJIzkZJ/9xFJ//Si8Ail/C6YBjKOXJv93xFT2GJV8CWAw8BOwZ3ZDMPQ68gOZd45LysD3wILB3dEMyV3T+K3kF4ESc/NuwB3BCdCMkDeVEnPzbUHT+K7kAKHrppmOOpZQX/2bbU+xYlnoJYBHwU5qlG43vYeBAmjeKSeq3RcD9wP7RDSlEsfmv1BWAN+Dk36b9gJXRjZA0kJU4+bep2PxXagFQ7JJNIMdUyoN/q+0rckxLvAQwAawBXhTdkML8lGZMt0Y3RNKcJoB7gOXRDSlMkfmvxBWA1+Dkn8KBwPHRjZA0r+Nx8k+hyPxXYgFQ5FJNTzi2Ur/5N5pOcWNb4iWAu4BDoxtRqHtoxraoZTCpIHcCh0U3olDF5b/SVgCOxck/pYOBo6MbIWlWR+Pkn1Jx+a+0AqC4JZoecoylfvJvM72ixri0SwA/Al4a3YjC3QGsiG6EpOe5DTgiuhGFKyr/lbQC8Aqc/LtwOPDy6EZIeo4jcfLvQlH5r6QCoKilmZ5zrKV+8W+yO8WMtQWARuFYS/3i32R3ihnrUu4BeAnNtRl156XA7dGNkMShNNuf1Z0i8l8pKwDnRzdgRHeR7x/uudENkASY/yKY/3rk+zQPZ8gpLgN2B3YFVvegPcPGDQOdGUmpfZf4fGD+U4iDgUnivxCDxjrgXbP04wLg8R60b5jwoUtSrBdi/jP/Vew/Ev9FGDRuoLlfYS4HA//Ug3YOGh+Ypy+S0ns/8XnA/KcwOXxhJoFLgB0G6M/2wIeALT1o90Lx7QH6IymdbxKfB8x/CnEg/V/+egQ4fYS+rQIe6EH7F/rD9tXLUoz9gM3E5wHzn0L8B+K/BPPFNcD+Y/RvH+Afe9CP+eK9Y/RP0ujeTfzf/0L574Ax+mf+07y+RvwXYLZ4lmYZq41tlhPARcAzPejXbPHVFvooaXjXEv/3b/5TiL4uf/0EeG2C/h5L87Cj6P7NjC3ACxL0V9Lc9qKZaKP//s1/5r8Qv0P8yZ8Z03tbU9kV+GQP+jkzZtvWk4vosSs9ngEeo3ngyy3A1cCf01y+O4VmmVfDeyfx53ZmmP/UmS8Tf+KnYx3wtrTdfY6+7Zm9Km13k4oeu9pjErgZ+BhwFrDT/KdLU64g/txNh/lPndqd/lwT+h7z721N5WCabSjR/d8KbAL2TNvdZKLHznhuPEHzZLgzge3mOW81W0Z/8t9Ce/tTMf9V7O3En/Rh9ram0qc9s7+duK+pRI+bMXfcBfx7YMmcZ69Ov0X8uTH/PTdyzX9Z+gdiT/bDwJuT93JwJwE/JXZM/j55L9OIThzGwvEAzVPXls5xDmtzObHnY9S9/amY/yqyK/A0cSf6asbb25/KPsQWRhuB3ZL3sn2RScMYLu4j3zfftWUpsIG4czDus01SMf9V4jeJOcGbaG9vayrTe2Y3EjNGb03fxdZFJQxj9PgisHy2k1mBXyNmzNvc25+K+a8C/5fuT+zdwGu66FxLjgFup/tx+kIXnWtZRKIwxo8naCbD2vw13Y91qr39qZj/CrUUWE+3J3U1sEsXnWvZTjQ36XQ5VhuAnbvoXIu6ThJGu/FJ6rlJcEeaLXddjm/qvf2pmP8KdD7dncx1NHfb5u58ut0ze1433WpNlwnCSBPfoo5tWL9Kd2Pa9d7+VMx/Bfk83ZzE7wEv7qhPXTiIJkl2MXaXdtSntnSVGIy0cRvlv5ltNd2MZdSzTVIx/xVgCc11v5Qnrw97W1Ppas/sOpqlylxET1xGe7EGWEGZFtM8Ujnl+Jn/xo/c8l82TiPtiXsAOLmz3sQ5mfTv2T6ts96ML3rSMtqN+2l+8ZXmZNKO24M072YonflvG33e0jHTyoTHvgJ4Fc0e19JdQ9PXKxJ+xusSHluaz4E03+3S7glImf+upMkJX074GX1h/ttGTgXAAQmO+QxwMXAGzdOtavEITZ8vphmDtqU4V9KgjqR5MltJuwNS/E1tAj5I81S/hxMcv6/Mf1NyKgA2tXy822n2tn6MZtmmNltp+n4s8MOWj72x5eNJw3od8D+jG9GitvPfPcAJwJ9i/qs2/+VUANzR4rE+DfwKcGOLx8zVrTSF0KdbPOadLR5LGtX7gHOjG9GSNvPfauAVwPUtHjNX5r9MHMn4N2esxcc1zuetNGM07jgf0XXDxxB905qRNh6njJsCV9DcpT/OWDwB/OuuG56RGvNfVq5m9JNyPXBI903OziE0YzXqOF/ZfZPHEj1BGenj7yjD/2P0MfgucFj3Tc5ObfkvK0cATzLcCdkC/DHNPloNZjHNmA27Z3Yd+e3Djp6cjG7iTPJ3OMM/CngL8BHMf8OoKf9l580M/jrMB4BVMc0swioG3zO7ATg1ppljiZ6YjG7ibprnw+fuFAZ/H8qDwJtimlmEGvJflo4Bvs/cJ2MS+Euad0RrPPsAn2X+6483AEdHNXBM0ROT0V28nzIcRfM3N1c/J4HPAftGNbAgRee/iegGjGERzVOdzgJeSfOmwEdpnmN9KfAvcU0r0hE0N8kcB+xNU/HeAnyJ5uEaW+OaNpZc263hPQgcSkbbtOYxwXPz387Az/hl/vtRXNOKVGT+y7kAkNqQ5R+uRvbvaF4hLFXPAkC120ReN0j9CPgE8BXgXppfs4cDrwbeOBXLw1rXf3fRvOnOwk+SKtfGvt8u4ofAhcB2A/TpAOACml+6d/eg7X2LNwwwhpKkwqV+M1iXE/9cLAieG38xxlhKkgpxK/ET0mxxC3A+aR7XfSjwduAzwJoe9LXrWEsZWwIlSWO4gvgJqauJfy41FgRvaWXkJEnZ+l/ET0ZbaWepvy01XDL4k9ZGS5KUpQ8SOxFF/OIfVokrBL4JVJIqdyJO/MMqoSDYQvNAF0lSpXZj+Jd+jBN9WupvS66XDE5OMRiSpHzcRvrJJudf/MPKZYXgvakGQJKUhz/DX/wp9XWF4OMpOy1J6r+T8Rd/l/qyQnBV6o5KkvptCfAETvxRogqCm7vonCSp3/6C8SYTl/rb09Ulg7u76pAkqb9ehxN/X6UqCB7tshOSpP4a5r0ALvXHaeuSwcauGy5J6qe3k9/EfzrwDppJsVaHAu+jOTfDFgGSJLEDcC9z/1p8L/1Z6j8ZuJ7ntvEB4DLgXcDL4poWZhHwbppzZQEgSRrKe3j+JPEscGpko7Yx28Q/V9RaEKxi8CJAkiQAtuf59wK8P7RFjWEmfguCZrXGAkCSNJRT+OUEcSexy/5tTPw1FgSLGOymTkmSnuMymgnioqDPTznx11IQvA8LAEnSkPYGHgRWdPy5ERN/qQXBy7EAkCSN4C3Ajh19Vp8m/lIKgl2wAJAk9VQOE/9c8SD9LwgsACRJvZLzxJ9TQWABIEnqhRIn/j4XBBYAkqRQNU38fSoILAAkSSFOB75D/OTbx7gXWE3zLoPDRh3gBVgASHOYiG6AVDgnmcE9BHwTuAb4Ns2DfMa10PibA1Utv/xSWhYAo7sPWD7mMSwApDn45ZfSsgAYz7g5ygJAmkNf3mkuSV1bF90AKZIFgKRa3RvdACmSBYCkWn05ugFSJK9/SWl5D8B4Ut0DsAV4JXDbmMeXsuUKgKQa/TlO/qqcKwBSWq4AjCfFCsA1NA9oenbMY0tZcwVAUi22AB/HyV8CYPvoBkhSQuuBe2hu+Ps/uOwv/YKXAKS0xr0EkPpBOKV/vqQ5eAlAkqQKWQBIklQhCwBJkipkASBJUoUsACRJqpAFgCRJFbIAkCSpQhYAkiRVyAJAkqQKWQBIklQhCwBJkipkASBJUoUsACRJqpAFgCRJFbIAkCSpQr5rW0pra3QDMmeOkhJxBUCSpApZAEiSVCELAEmSKmQBIElShSwAJEmqkAWAJEkVsgCQJKlCFgCSJFXIAkCSpApZAEiSVCELAEmSKmQBIElShSwAJEmqkAWAJEkVsgCQJKlCFgBSWpuiG5Axx05KyAJASmt9dAMy9mR0A6SSWQBIaVkAjM4CQErIAkBKy0lsdI6dlJAFgJTWA9ENyNhPoxsglcwCQErr9ugGZOyO6AZIJbMAkNL6cXQDMmYBICVkASCl9S/RDciYBYCU0ER0A6TC7Qk8isX2sLYA+wCPRzdEKpVJSUrrMeCW6EZk6Cac/KWkLACk9L4W3YAMOWZSYhYAUnpfiW5AhhwzKTHvAZDSWwI8BOwe3ZBMPA7sDzwT3RCpZK4ASOk9A/xNdCMychlO/lJyFgBSNz4X3YCMOFaSpGIsotnXvtWYN27HS5NSJ1wBkLoxCXw0uhEZ+AhNISApMSttqTuLgbuAF0U3pKfuBw4DNkU3RKqBKwBSd54FPhbdiB77E5z8JUmFWkJznTv6Wnvf4sdTYyNJUrFOJTUL0XIAAAcZSURBVH7C7VucPtaISpKUiS8SP+n2JS4fcywlScrGcuDnxE++0fFzvClSklSZM2i2B0ZPwlExCZw99ihKkpShjxM/EUfFn7UwfpIkZWkJ8C3iJ+Ou4xvADi2MnyRJ2VoG3ET8pNxV/BDYs5WRkyQpcwcC9xA/OaeO+2lugJQkSVNWAPcSP0mnijVTfZQkSTPsD9xM/GTddtyK2/0kSZrXnpR1Y+A3gD1aHSFJkgq1GPgweT8nYBK4BO/2lyRpaGeR5xMD1wIXJBgPSZKqsZy83h1wOV7vlySpNauA24if4OeKH+Nb/SRJSmJH4GLgPuIn/Om4F7iI5qmGkiQpoR2AdwK3Ezfx3w68A2/ykyQpxLE0d9s/QvpJ/3FgNXAyMNFF5ySl4R+wVI4lNPcJrALeCLwKWDTmMbfQPJjoa8C1wDXApjGPKakHLACkcu0BvBp4Cc0jeA+nedLgLlP/t52n/rsNNL/s1wMPAnfQLO//GPje1P9NkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkqSCrACWJTjusqljSyrERHQDJLXqB8CrgLuBfwbumvqf7wV+BjwMrAW2Tv2/ALvT5II9gH2BvYHlwGFT8QrgEOAm4JiO+iFJkga0HfAUzeSeIp6e+gxJBVgU3QBJrTkU2Cnh8XekWQmQVAALAKkcLyvkMyR1wAJAKseRhXyGpA5YAEjlcAVA0sAsAKRyuAIgaWBuA5TKsB3wJGlvAgTYCOwCbEn8OZIScwVAKkPqHQDT3AkgFcICQCpDl9fmvQ9AKoAFgFSGLq/Nex+AVAALAKkMrgBIGooFgFQGVwAkDcVdAFL+utoBMM2dAFIBXAGQ8tfVDoBp7gSQCmABIOUv4pq89wFImbMAkPIXcU3e+wCkzFkASPlzBUDS0CwApPy5AiBpaO4CkPLW9Q6Aae4EkDLnCoCUt653AExzJ4CUOQsAKW+R1+K9D0DKmAWAlLcHgacCPvcp4KGAz5UkSVNeT3MfwNaOYgOwqpOeSZKkeXVVBDj5S5LUM6mLACd/SZLG8FLg+ETHTlUEpJz8j6cZE0mSirQSuAzYTNoJte0ioIu2TgJXA2fi80kkSQXYAbgA+A6zT6wnJfrctoqAiELlZuBdxDzfQJKksSwDLgLuY+EJtq9FQPQqxUPAh4C9E7VBkqTWvBi4hGbyHGai7VsRkHLyXzlkmzYCq/HBQ5KkHtr2+v6ov7b7UgT0afLfNrxPQJLUC/Nd3x+1CDgxUVsHLQL6OvnPjJto7hPYMVFbJUl6nkGv7+dWBKSe/NfN89mjhvcJSJKSO4zm+v562p/IoouAlJP/vyLN5L9tTN8ncGSiPkiSKjTu9f2+FwG5T/7bhvcJSJLGMn19/3q6m7wiioCSJv+Z4X0CkqSBTV/fv5e4iWtmEfDGRH09iXQ7D6In/23D+wQkSXPq6vr+KLGedEVACq+jP5P/tuF9ApKkX4i4vl9yEdDXyX/b8D4BSapUH67vl1gE5DD5zwzvE5CkCvTt+v6oRcAJbQ9MC3Kc/LeN6fsE9mp7YCRJcfp8fb+EIuC1wBPEj0sb4X0CklSAXK7v51wElDT5bxtb8D4BScrKYvK8vj9qEfCGdoZtJKVO/jPjRrxPQJJ6azfyv76fUxFQy+S/bXifgCT1SGnX90eJJ4DXjDuQQzgWeCxBP3KJ6fsEjhh3ICVJwyv5+n6fi4DaJ/9tY9v7BCRJCU1f37+O+OTfx0hdBDj5zx3eJyBJCdR6fX+UWAscP9owz+sYnPwHiQfxPgFJGtuheH1/lGi7CDgG+HkP+pVTPI33CUjS0Ly+P360VQQ4+Y8X3icgSQvw+n77MW4R4OTfbnifgCRtY/r6/hriE3SJsRY4buCz8UtH4+SfKrxPQL3gIy4VbT2wc3QjCrcWOA34zoD//fHAlcDuyVokgA3ALtGNUL0WRTdA1XPyT2934GvAO5m/6F8E/Nup/9bJPz2/+wrlCoCibY1uQGVuAv43cA1w39T/33LgZJrr00cFtatW5mCF8cunaBYAqpk5WGG8BCBJUoUsACRJqpAFgCRJFbIAkCSpQhYAkiRVyAJAkqQKWQBIklQhCwBJkipkASBJUoUsACRJqpAFgCRJFbIAkCSpQhYAkiRVyAJAkqQKWQBIklQhCwBJkipkASBJUoUsACRJqpAFgCRJFbIAkCSpQhYAkiRVyAJAkqQKWQBIklQhCwBJkipkASBJUoUsACRJqpAFgCRJFbIAkCSpQhYAkiRVyAJAkqQKWQBIkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkmb1/wEE2AhAkxYESwAAAABJRU5ErkJggg=="/>
+                        </defs>
+                        </svg></div>
+                    </div>
+                <div class="tytul">Profesjonalna <br> prywatna armia</div>
+                <div class="tresc">Doskonale wyszkolone jednostki, z topową kadrą oficerską, zapewniające sukces każdej misji</div>
+            </article>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                    <img src="img/gun-icon.png" alt="karabin">
+                    </div>
+                </div>
+                <div class="tytul">Sprzęt wojskowy najwyższej jakości</div>
+                <div class="tresc">Narzędzia, na których można polegać w każdych warunkach, o każdej porze, w każdym terenie</div>
+            </article>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                        <img src="img/presentation.png" alt="kurs">
+                    </div>
+                </div>
+                <div class="tytul">Szkolenia <br> prywatnych służb</div>
+                <div class="tresc">Kompleksowe szkolenia w szerokim zakresie dziedzin związanych z ochroną i walką</div>
+            </article>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                        <img src="img/vip.png" alt="karta vip">
+                    </div>
+                </div>
+                <div class="tytul">Ochrona wydarzeń i <br> osób V.I.P.</div>
+                <div class="tresc">Z naszą kompleksową ochroną, zapewnianą przez specjalistów, możesz poczzuć się bezpiecznie</div>
+            </article>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                        <img src="img/megaphone.png" alt="megafon">
+                    </div>
+                </div>
+                <div class="tytul">Różnorodzajowa propaganda wojenna</div>
+                <div class="tresc">Świetnie wykreowany wizerunek władzy to podstawa stabilnych rządów, a przy naszej pracy jest to zapewnione</div>
+            </article>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                        <img src="img/spy.png" alt="Czapka i ciemne okulary">
+                    </div>
+                </div>
+                <div class="tytul">Tajny wywiad <br> wojskowy</div>
+                <div class="tresc">Zdobywanie kompletnych informacji wywiadowczych w tajemnicych przed oponentem, a nawet przed przyjaciółmi</div>
+            </article>
+        </section>
+
+
+        <section id="powody">
+            <div class="moro">
+                <svg viewBox="0 0 412 746" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>Wzór moro</title>
+                    <path d="M139.378 612.187C116.555 554.293 63.1325 558.703 -25.7276 420.453L-27.0913 414.2C-27.5141 405.649 -28.3445 380.682 -28.2832 349.225C-28.2067 309.903 354.755 236.732 395.254 224.069C435.752 211.407 422.13 233.955 440.574 277.441C459.019 320.928 415.315 337.312 429.005 378.834C442.695 420.355 479.797 396.366 513.755 451.478C547.713 506.59 490.492 476.58 502.849 536.076C515.206 595.572 445.112 628.382 391.025 622.662C336.939 616.942 280.028 564.267 264.965 619.884C249.902 675.501 162.2 670.081 139.378 612.187Z" fill="#B5AE72"/>
+                    <path d="M-16.7422 601.411C-43.6467 544.473 18.1269 479.933 -12.5025 408.896C-1.05339 403.827 74.9758 358.212 112.964 394.601C154.92 434.791 147.99 409.897 170.897 441.575C193.805 473.253 174.339 542.975 168.899 593.419C163.459 643.863 127.419 614.753 96.8929 648.769C66.3668 682.784 10.1624 658.35 -16.7422 601.411Z" fill="#DBD49D"/>
+                    <path d="M42.217 474.677C-12.9603 445.521 -60.6979 438.717 -99.6746 356.004C-111.275 331.388 -95.3706 308.386 -99.8133 290.567C-105.367 268.294 -79.374 231.554 -73.2997 218.485C-67.2253 205.417 -53.7897 152.001 -41.8577 137.472C-24.9143 116.841 19.6729 125.982 90.3889 90.1946C165.254 52.3073 178.521 64.3695 201.684 62.4456C224.847 60.5216 272.808 69.4704 291.431 78.0317C310.053 86.5929 321.944 129.293 337.335 143.612C352.727 157.93 366.822 134.609 412.818 150.65C458.815 166.691 439.948 184.599 425.152 235.054C410.356 285.508 417.514 284.274 411.377 313.313C405.241 342.352 385.507 336.818 355.488 334.95C325.468 333.082 295.604 335.576 274.652 355.105C253.701 374.633 246.063 423.853 231.823 437.857C217.582 451.861 223.001 441.156 184.795 468.838C146.589 496.52 141.315 516.541 111.296 514.673C81.2766 512.804 97.3943 503.834 42.217 474.677Z" fill="#7E7A57"/>
+                </svg>
+                <svg viewBox="0 0 940 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M274.082 397.801C261.031 351.277 176.2 344.758 91.5736 227.39L91.8776 222.566C94.5369 216.232 102.93 197.813 115.229 174.807C130.602 146.049 754.84 162.374 822.764 160.498C890.688 158.621 860.745 172.634 872.573 207.818C884.402 243.001 810.047 247.016 815.24 279.895C820.433 312.774 887.465 301.99 918.921 348.51C950.377 395.03 872.989 362.633 869.135 408.42C865.281 454.207 743.493 465.427 661.558 451.374C579.624 437.322 511.51 388.398 466.499 426.344C421.487 464.291 287.133 444.326 274.082 397.801Z" fill="#B5AE72"/>
+                    <path d="M19.6053 385.33C-15.686 336.607 103.8 289.914 64.8473 229.398C85.6354 226.341 226.036 196.335 284.532 229.398C349.139 265.914 342.062 245.059 375.419 272.901C408.777 300.743 361.4 355.557 342.062 396.016C322.724 436.474 266.161 409.502 206.698 434.299C147.234 459.095 54.8966 434.054 19.6053 385.33Z" fill="#DBD49D"/>
+                    <path d="M176.254 279.461C101.714 248.061 30.0782 234.374 1.5207 166.743C-6.97855 146.615 26.69 132.686 26.69 118.838C26.69 101.528 81.3848 79.3867 95.9055 70.9329C110.426 62.479 152.052 25.8458 176.254 17.3919C210.619 5.38747 276.447 20.2099 400.357 6.92529C531.538 -7.13876 547.501 4.10734 584.287 6.92529C621.072 9.74324 692.224 25.0407 717.877 34.7022C743.531 44.3638 745.467 77.7766 763.86 91.0612C782.253 104.346 813.23 89.8535 878.574 109.982C943.917 130.11 907.615 139.771 865.021 173.989C822.427 208.207 834.043 208.61 813.23 228.738C792.417 248.866 763.86 241.218 717.877 234.374C671.895 227.53 624.461 223.907 584.287 234.374C544.112 244.841 513.135 279.461 485.546 287.11C457.956 294.759 470.541 287.915 400.357 301.2C330.174 314.484 314.201 328.171 268.218 321.328C222.236 314.484 250.793 310.861 176.254 279.461Z" fill="#7E7A57"/>
+                </svg>
+            </div>
+            <div class="tytul">
+                <h3>Dlaczego akurat my?</h3>
+                <hr>
+            </div>
+            <div class="opis">
+                Chcesz zdobyć władzę i bogactwo, lecz brakuje Ci wojska? A może potrzebujesz dozbroić i doszkolić swoje siły? Wszystko to, a nawet więcej, znajdziesz na naszej stronie - <b>borsuk.pl</b>.
+            </div>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                        <img src="img/experience.png" alt="doświadczenie">
+                    </div>
+                </div>
+                <div class="tytul">Wieloletnie<br> doświadczenie</div>
+                <div class="tresc">Setki misji w terenie, dziesiątki godzin treningów, lata realnych doświadczeń, zapewniają najwyższą jakość</div>
+            </article>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                    <img src="img/law-book.png" alt="Księga prawa">
+                    </div>
+                </div>
+                <div class="tytul">Działania <br> zgodne z prawem</div>
+                <div class="tresc">Działania zgodne z najnowszymi wymogami prawa konfliktów zbrojnych, w pełni humanitarne</div>
+            </article>
+            <article>
+                <div class="ikona">
+                    <div class="kolo">
+                        <img src="img/shield.png" alt="Tarcza potwierdzająca bezpieczeństwo">
+                    </div>
+                </div>
+                <div class="tytul">Prywatność <br> i bezpieczeństwo</div>
+                <div class="tresc">Gwarancja prywatności klienta i jego pełnego bezpieczeństwa w trakcie wykonywania misji</div>
+            </article>
+        </section>
+
+        <section id="galeria">
+            <div class="img i1">
+                <img src="img/solDes.jpg" alt="Żołnierze na pustyni">
+                <div class="text">
+                    Irak, 2003<br>
+                    Odbicie oddziału sił zbrojnych USA, z rąk wroga.<br>
+                    Operacja zakończona pełnym sukcesem, bez strat sojuszniczych.<br>
+                    Pojmano pułkownika wojsk irackich - Dżamala Ghazawwiego
+                </div>
+            </div>
+            <div class="img i2">
+                <img src="img/spy.jpg" alt="Przystojny mężczyzna z bronią">
+                <div class="text">
+                    Niezwykle przystojny mężczyzna, wcale nie wyglądający jak szpieg, chociaż nim jest.<br>
+                    Prezentuje swoją broń - pistolet Colta M1911.
+                </div>
+            </div>
+            <div class="img i3">
+                <img src="img/helicopter.jpg" alt="Zołnierze i lecący nad nimi helikopter">
+                <div class="text">
+                    Francja, 2010<br>
+                    Odbicie zakładników ze szkoły w Lyonie, z rąk terrorystów oraz zapobiegnięcie wybuchowi bomb.<br>
+                    Operacja zakończona pełnym sukcem, bez rannych wśród cywilów i strat w oddziale.<br>
+                    Unieszkodliwiono groźną grupę terrorystyczną OAS.
+                </div>
+            </div>
+            <div class="img i4">
+                <img src="img/tank.jpg" alt="Czołg">
+                <div class="text">
+                    Kazachstan, 2022<br>
+                    Utrzymanie bezpieczeństwa w Semej, w obwodzie wschodniokazachstańskim.<br>
+                    Operacja zakończona pełnym sukcem, bez strat w oddziale.<br>
+                    Zapobiegnięto eskalacji konfliktów wewnętrznych. Powstrzymano występowanie dalszych ofiar i rannych wśród cywilów.
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <form method="POST" action="">
+                <div class="tytul">
+                    <h3>Zamów usługi</h3>
+                    <hr>
+                </div>
+                <label>
+                    <div>Imię i nazwisko</div>
+                    <input type="text" placeholder="Twoje imię i nazwisko...." required>
+                    <hr>
+                </label>
+                <label>
+                    <div>Adres e-mail</div>
+                    <input type="email" placeholder="Twój adres e-mail..." required>
+                    <hr>
+                </label>
+                <label>
+                    <div>Numer telefonu</div>
+                    <input type="text" minlength="9" maxlength="15" placeholder="Twój numer telefonu..." required>
+                    <hr>
+                </label>
+                <label>
+                    <div>Adres zamieszkania</div>
+                    <input type="text" placeholder="Twój pełny adres zamieszkania..." required>
+                    <select name="Kraj" id="kraj" required>
+                            <option value="0" disabled>Wybierz swój kraj</option>
+                            <option value="Afganistan">Afganistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antigua & Barbuda">Antigua i Barbuda</option>
+                            <option value="Netherland Antilles">Antyle Holenderskie</option>
+                            <option value="Saudi Arabia">Arabia Saudyjska</option>
+                            <option value="Argentina">Argentyna</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbejdżan</option>
+                            <option value="Bahamas">Bahamy</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesz</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belgium">Belgia</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermudy</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Belarus">Białoruś</option>
+                            <option value="Bolivia">Boliwia</option>
+                            <option value="Bonaire">Bonaire</option>
+                            <option value="Bosnia & Herzegovina">Bośnia i Hercegowina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Brazil">Brazylia</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="British Indian Ocean Ter">Brytyjskie Terytorium Oceanu Indyjskiego</option>
+                            <option value="Bulgaria">Bułgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">Chiny</option>
+                            <option value="Croatia">Chorwacja</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Curaco">Curacao</option>
+                            <option value="Cyprus">Cypr</option>
+                            <option value="Chad">Czad</option>
+                            <option value="Czech Republic">Czechy</option>
+                            <option value="Denmark">Dania</option>
+                            <option value="Democratic Republic of Congo">Demokratyczna Republika Konga</option>
+                            <option value="Dominica">Dominika</option>
+                            <option value="Dominican Republic">Dominikana</option>
+                            <option value="Djibouti">Dżibuti</option>
+                            <option value="Egypt">Egipt</option>
+                            <option value="Ecuador">Ekwador</option>
+                            <option value="Eritrea">Erytrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Etiopia</option>
+                            <option value="Swaziland">Eswatini</option>
+                            <option value="Fiji">Fidżi</option>
+                            <option value="Phillipines">Filipiny</option>
+                            <option value="Finland">Finlandia</option>
+                            <option value="France">Francja</option>
+                            <option value="French Southern Ter">Francuskie Terytoria Południowe i Antarktyczne</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Greece">Grecja</option>
+                            <option value="Greenland">Grenlandia</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Georgia">Gruzja</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guyana">Gujana</option>
+                            <option value="French Guiana">Gujana Francuska</option>
+                            <option value="Guatemala">Gwatemala</option>
+                            <option value="Guadeloupe">Gwadeloupe</option>
+                            <option value="Guinea">Gwinea</option>
+                            <option value="Equatorial Guinea">Gwinea Równikowa</option>
+                            <option value="Republic of Montenegro">Czarnogóra</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Hawaii">Hawaje</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Indonesia">Indonezja</option>
+                            <option value="India">Indie</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Irak</option>
+                            <option value="Ireland">Irlandia</option>
+                            <option value="Iceland">Islandia</option>
+                            <option value="Israel">Izrael</option>
+                            <option value="Jamaica">Jamajka</option>
+                            <option value="Japan">Japonia</option>
+                            <option value="Yemen">Jemen</option>
+                            <option value="Jordan">Jordania</option>
+                            <option value="Cayman Islands">Kajmany</option>
+                            <option value="Cambodia">Kambodża</option>
+                            <option value="Cameroon">Kamerun</option>
+                            <option value="Canada">Kanada</option>
+                            <option value="Qatar">Katar</option>
+                            <option value="Kazakhstan">Kazachstan</option>
+                            <option value="Kenya">Kenja</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Kyrgyzstan">Kirgistan</option>
+                            <option value="Colombia">Kolumbia</option>
+                            <option value="Comoros">Komory</option>
+                            <option value="Congo">Kongo</option>
+                            <option value="Korea Sout">Korea Południowa</option>
+                            <option value="Korea North">Korea Północna</option>
+                            <option value="Costa Rica">Kostaryka</option>
+                            <option value="Kuwait">Kuwejt</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Lebanon">Liban</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libya">Libia</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Litwa</option>
+                            <option value="Luxembourg">Luksemburg</option>
+                            <option value="Latvia">Łotwa</option>
+                            <option value="Macedonia">Macedonia</option>
+                            <option value="Madagascar">Madagaskar</option>
+                            <option value="Malaysia">Malezja</option>
+                            <option value="Macau">Makau</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Maldives">Malediwy</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Mayotte">Majotta</option>
+                            <option value="Morocco">Maroko</option>
+                            <option value="Martinique">Martynika</option>
+                            <option value="Mauritania">Mauretania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mexico">Meksyk</option>
+                            <option value="Midway Islands">Midway</option>
+                            <option value="Myanmar">Mjanma (Birma)</option>
+                            <option value="Moldova">Mołdawia</option>
+                            <option value="Monaco">Monako</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Mozambique">Mozambik</option>
+                            <option value="Nambia">Namibia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherlands">Niderlandy</option>
+                            <option value="Germany">Niemcy</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Nicaragua">Nikaragua</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk</option>
+                            <option value="Norway">Norwegia</option>
+                            <option value="Northern Mariana Islands">Mariany Północne</option>
+                            <option value="New Caledonia">Nowa Kaledonia</option>
+                            <option value="New Zealand">Nowa Zelandia</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palestine">Palestyna</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua Nowa Gwinea</option>
+                            <option value="Paraguay">Paragwaj</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Pitcairn Island">Pitcairn</option>
+                            <option value="French Polynesia">Polinezja Francuska</option>
+                            <option value="Poland">Polska</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puertoryko</option>
+                            <option value="Central African Republic">Republika Centralnej Afryki</option>
+                            <option value="South Africa">Republika Południowej Afryki</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Russia">Rosja</option>
+                            <option value="Romania">Rumunia</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="St Barthelemy">St. Barthelemy</option>
+                            <option value="St Eustatius">St. Eustatius</option>
+                            <option value="St Helena">St. Helena</option>
+                            <option value="St Kitts-Nevis">St. Kitts-Nevis</option>
+                            <option value="St Lucia">St. Lucia</option>
+                            <option value="St Maarten">St. Maarten</option>
+                            <option value="St Pierre & Miquelon">St. Pierre i Miquelon</option>
+                            <option value="St Vincent & Grenadines">St. Vincent i Grenadyny</option>
+                            <option value="Saipan">Saipan</option>
+                            <option value="El Salvador">Salwador</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="Samoa American">Samoa Amerykańskie</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome & Principe">Sao Tome i Principe</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Republic of Serbia">Serbia</option>
+                            <option value="Seychelles">Seszele</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapur</option>
+                            <option value="Slovakia">Słowacja</option>
+                            <option value="Slovenia">Słowenia</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="United States of America">Stany Zjednoczone</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Surinam</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Switzerland">Szwajcaria</option>
+                            <option value="Sweden">Szwecja</option>
+                            <option value="Tajikistan">Tadżikistan</option>
+                            <option value="Tahiti">Tahiti</option>
+                            <option value="Thailand">Tajlandia</option>
+                            <option value="Taiwan">Tajwan</option>
+                            <option value="Tanzania">Tanzania</option>
+                            <option value="East Timor">Timor Wschodni</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad & Tobago">Trinidad i Tobago</option>
+                            <option value="Tunisia">Tunezja</option>
+                            <option value="Turkey">Turcja</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks & Caicos Is">Turks i Caicos</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraine">Ukraina</option>
+                            <option value="Uraguay">Urugwaj</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Wake Island">Wake</option>
+                            <option value="Wallis & Futana Is">Wallis i Futana</option>
+                            <option value="Vatican City State">Watykan</option>
+                            <option value="Venezuela">Wenezuela</option>
+                            <option value="Hungary">Węgry</option>
+                            <option value="Great Britain">Wielka Brytania</option>
+                            <option value="Vietnam">Wietnam</option>
+                            <option value="Isle of Man">Wyspa Man</option>
+                            <option value="Italy">Włochy</option>
+                            <option value="Cote DIvoire">Wybrzeże Kości Słoniowej</option>
+                            <option value="Christmas Island">Wyspa Bożego Narodzenia</option>
+                            <option value="Cook Islands">Wyspy Cooka</option>
+                            <option value="Isle of Man">Wyspa Man</option>
+                            <option value="Palau Island">Wyspa Palau</option>
+                            <option value="Virgin Islands (USA)">Wyspy Dziewicze (Stany Zjednoczone)</option>
+                            <option value="Virgin Islands (Brit)">Wyspy Dziewicze (Wielkie Brytania)</option>
+                            <option value="Falkland Islands">Wyspy Falklandzkie</option>
+                            <option value="Canary Islands">Wyspy Kanaryjskie</option>
+                            <option value="Cocos Island">Wyspy Kokosowe</option>
+                            <option value="Marshall Islands">Wyspy Marshalla</option>
+                            <option value="Channel Islands">Wyspy Normandzkie</option>
+                            <option value="Faroe Islands">Wyspy Owcze</option>
+                            <option value="Solomon Islands">Wyspy Salomona</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                            <option value="United Arab Erimates">Zjednoczone Emiraty Arabskie</option>
+                    </select>
+                    <hr>
+                </label>
+                <label>
+                    <div>Usługa</div>
+                    <select name="usługi" id="uslugi" required>
+                        <option value="0" disabled>Wybierz usługę</option>
+                        <option value="armia">Wynajęcie wojska</option>
+                        <option value="broń">Zakup broni</option>
+                        <option value="szkolenie">Wykupienie kursu</option>
+                        <option value="ochrona">Ochrona</option>
+                        <option value="propaganda">Propaganda</option>
+                        <option value="wywiad">Szpiegostwo</option>
+                    </select>
+                    <hr>
+                </label>
+                <label>
+                    <div>Opis i uwagi</div>
+                    <textarea name="opis" placeholder="Napisz coś..."></textarea>
+                    <hr>
+                </label>
+                <label>
+                    <div>Zgody</div>
+                    <label>
+                        <input type="checkbox" name="rodo" required>
+                        <span></span>
+                        Zgoda na przetwarzanie danych osobowych
+                    </label>
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        <span></span>
+                        Przystąpienie do newslettera
+                    </label>
+                </label>
+                <button type="submit" title="Prześlij">
+                    <img src="img/check.png" alt="Ptaszek">
+                    <div>
+                        <img src="img/tank.png" alt="Ptaszek">
+                        Prześlij
+                    </div>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="tytul">
+            <b>borsuk.pl</b> - prywatna armia
+        </div>
+        <div class="button">
+            <a href="#baner">Powrót do góry</a>
+        </div>
+        <div class="dane">
+            44-100 Gliwice,<br>
+            ul. Chorzowska 5<br>
+            tel. (48) 32 546 91 25<br>
+            email: borsuk.pl@sklep.pl
+        </div>
+        <div class="zdjecie">
+            <img src="img/soldiersFoot.svg" alt="żołnierze">
+            <div></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
