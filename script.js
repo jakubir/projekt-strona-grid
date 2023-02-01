@@ -1,7 +1,7 @@
 let pop = 150;
 if(window.innerWidth > 1000)
     pop = window.pageYOffset;
-window.onscroll = function(){
+function scrolling(){
     let teraz = window.pageYOffset;
     if(pop > teraz)
         document.getElementById("nav").style.top = "0";
@@ -12,6 +12,7 @@ window.onscroll = function(){
     if(window.innerWidth > 1000)
         pop = teraz;
 }
+window.addEventListener("scroll", scrolling);
 document.querySelector("button[type='submit']").addEventListener("click", function(){
     let y = -150;
     if(window.innerWidth < 1001)
@@ -20,13 +21,25 @@ document.querySelector("button[type='submit']").addEventListener("click", functi
         window.scrollBy(0, y);
     }, 10);
 })
-for(i=0; i<3; i++){ 
-    document.querySelectorAll(".skroty ul li")[i].addEventListener("click", function(){
-        let y = -100;
+for(i=0; i<5; i++){ 
+    document.querySelectorAll(".skroty ul li, footer .button")[i].addEventListener("click", function(event){
+        event.preventDefault();
+        let y = document.querySelector(this.childNodes[0].getAttribute("href")).offsetTop;
         if(window.innerWidth < 1001)
-            y = -200;
+            y -= 200;
+        else
+            y -= 100;
+        window.removeEventListener("scroll", scrolling);
+        scroll({
+            top: y,
+            behavior: "smooth"
+        });
+        if(window.innerWidth > 1000)
+            document.getElementById("nav").style.top = "0";
+        else 
+            document.getElementById("nav").style.top = "-200px";
         setTimeout(function(){
-            window.scrollBy(0, y);
-        }, 10);
+            window.addEventListener("scroll", scrolling);
+        }, 800);
     })
 }
